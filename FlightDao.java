@@ -24,34 +24,28 @@ public interface FlightDao {
 	void setFlight(String departure_aerodrome, String arrivalAerodrome, LocalDate departureDate,
 			LocalDateTime departureTime, LocalDate arrivalDate, LocalDateTime arrivalTime, LocalDateTime flightDuration,
 			int availablePlaces, int price, String meetingPlace);
-
-	/**
-	 * @param flight
-	 * @return information of a specific flight 
-	 */
-	Flight getFlightInfo(Flight flight);
 	
 	/**
 	 * @param Flight
-	 * @return delete a flight 
+	 * delete a flight 
 	 */
 	void deleteFlights(Flight flight);
 	
 	/**
 	 * @param availablePlaces
-	 * @return modify available places 
+	 * modify available places 
 	 */
 	void updateFlightPlace(int availablePlaces);
 	
 	/**
 	 * @param price
-	 * @return modify price  
+	 * modify price  
 	 */
 	void updateFlightPrice(int price);
 	
 	/**
 	 * @param String meetingPlace
-	 * @return modify meetingPlace
+	 * modify meetingPlace
 	 */
 	void updateFlightMeetingPlace(String meetingPlace);
 	
