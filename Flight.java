@@ -1,4 +1,4 @@
-package genie_logicil;
+package glt4p;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
