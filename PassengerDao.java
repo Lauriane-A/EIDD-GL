@@ -8,6 +8,7 @@ public interface PassengerDao {
 	 List<Passenger> getPassengers();
 	 
 	 /*
+	  * @param flight to add
 	  * add to the passenger's list the booked flight
 	  */
 	 void bookFlight (Flight flight);
