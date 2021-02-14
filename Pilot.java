@@ -8,7 +8,6 @@ public class Pilot extends Passenger{
 	int numFlightHours;
 	String flightInformation;
 	List<Flight> flightList; 
-	
 }
 
 
