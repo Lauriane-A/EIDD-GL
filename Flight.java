@@ -1,4 +1,4 @@
-package glt4p;
+package com.example.jetty_jersey.ws;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

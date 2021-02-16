@@ -1,4 +1,4 @@
-package gltp4;
+package com.example.jetty_jersey.ws;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -19,7 +19,7 @@ public interface FlightDao {
 
 	/**
 	 * @param departure_aerodrome,arrivalAerodrome,departureDate,departureTime,arrivalDate,arrivalTime,flightDuration ,availablePlaces,price,meetingPlace
-	 * @return nothing but add a new flight to the database
+	 * add a new flight to the database
 	 */
 	void setFlight(String departure_aerodrome, String arrivalAerodrome, LocalDate departureDate,
 			LocalDateTime departureTime, LocalDate arrivalDate, LocalDateTime arrivalTime, LocalDateTime flightDuration,

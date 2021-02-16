@@ -1,6 +1,7 @@
-package gltp4;
+package com.example.jetty_jersey.ws;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Passenger {
 	int id;

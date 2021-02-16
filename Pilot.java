@@ -1,4 +1,4 @@
-package gltp4;
+package com.example.jetty_jersey.ws;
 
 import java.util.List;
 

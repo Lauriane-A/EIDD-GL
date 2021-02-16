@@ -1,4 +1,6 @@
-package gltp4;
+package com.example.jetty_jersey.ws;
+
+import java.util.List;
 
 public interface PassengerDao {
 	
@@ -11,7 +13,7 @@ public interface PassengerDao {
 	  * @param flight to add
 	  * add to the passenger's list the booked flight
 	  */
-	 void bookFlight (Flight flight);
+	 void bookFlight (Passenger passenger, Flight flight);
 	 
 	 /*
 	  * @param passenger who signs up
