@@ -3,13 +3,22 @@ package com.flightSharing.dao;
 import java.time.LocalDate;
 import java.util.List;
 
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
 public class User {
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.NATIVE)
 	private int id;
 	private String firstName;
 	private String lastName;
 	private LocalDate birthday;
 	private int phone;
 	private String email;
+	@Persistent
 	private List<Flight> bookedFlights;
 
 	public User(int id) {

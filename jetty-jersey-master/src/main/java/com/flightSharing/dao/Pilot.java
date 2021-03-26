@@ -2,6 +2,10 @@ package com.flightSharing.dao;
 
 import java.util.List;
 
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+
+@PersistenceCapable
 public class Pilot extends User {
 
 	public Pilot(int id) {
@@ -13,6 +17,7 @@ public class Pilot extends User {
 	private String qualifications;
 	private int numFlightHours;
 	private String airplaneBrand;
+	@Persistent
 	private List<Flight> flightList;
 
 	public String getExperience() {

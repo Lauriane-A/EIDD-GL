@@ -5,9 +5,16 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
 public class Flight {
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.NATIVE)
 	private int id;
-	private String test;
 	private String departureAerodrome;
 	private String arrivalAerodrome;
 	private LocalDate departureDate;
@@ -19,6 +26,7 @@ public class Flight {
 	private int price;
 	private String meetingPlace;
 	private Pilot owner;
+	@Persistent
 	private List<User> subscribed = new ArrayList<User>();
 
 	public int getId() {
