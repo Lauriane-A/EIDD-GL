@@ -7,6 +7,7 @@ import java.util.List;
 
 public class Flight {
 	private int id;
+	private String test;
 	private String departureAerodrome;
 	private String arrivalAerodrome;
 	private LocalDate departureDate;
